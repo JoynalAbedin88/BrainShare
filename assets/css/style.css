@@ -1107,3 +1107,17 @@ section {
   box-sizing: border-box;
   box-shadow: 3px 3px 5px 0px #ddd;
 }
+
+.happy-client img{
+  width: 200px !important;
+  margin: 0 auto;
+}
+.happy-client .client-item{
+  width: 70%;
+  margin: 0 auto;
+  color: #ddd;
+}
+.happy-client .client-item .star{
+  color: #ddd;
+    font-size: 4em;
+}
