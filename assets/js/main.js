@@ -244,14 +244,3 @@ owl.owlCarousel({
 //       }
 //   }
 // })
-var owl = $('.happy-client');
-owl.owlCarousel({
-    items:1,
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    nav:false,
-    // navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
-});
