@@ -1322,3 +1322,80 @@ section {
   overflow: hidden;
   padding: 1em;
 }
+#question  .item{
+  border: 1px solid #0077D7;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 9px -3px;
+  float: left;
+  overflow: hidden;
+  padding: .5em;
+  position: relative;
+  margin: 10px;
+}
+#question  .item h3 button{
+  border: none;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  text-align: left;
+}
+#question  .item h3 button:focus{
+  box-shadow: none;
+}
+#question  .item h3 button span{
+  position: absolute;
+  background: #0077D7;
+  padding:15px;
+  border-radius: 50%;
+  right: 4%;
+  color: #fff;
+}
+#question  .item h3 button span.checked::after{
+  content: '+';
+  position: absolute;
+  font-size: 2em;
+  left: 6.5px;
+  top: -14px;
+}
+#question  .item h3 button span.checked::before{
+  content: '-';
+  position: absolute;
+  font-size: 2em;
+  left: 6.5px;
+  top: -17px;
+  display: none;
+}
+#question  .item input:checked ~ .checked::after {
+  display: none;
+}
+#question  .item input:checked ~ .checked::before{
+  display: block;
+}
+#question  .item input[type='checkbox']{
+  display: none;
+}
+.subscribe input{
+  border: 1px solid #0077D7;
+}
+.subscribe button{
+  border: 1px solid #0077D7;
+  font-size: 12px;
+  padding: 9px 30px;
+}
+@media (min-width: 1000px){
+  #question  .item {
+    -ms-flex: 0 0 45%;
+    flex: 0 0 47%;
+    max-width: 47%;
+    width: 47%;
+  }
+}
+@media (max-width: 999px){
+  #question  .item {
+    -ms-flex: 0 0 95%;
+    flex: 0 0 95%;
+    max-width: 95%;
+    width: 95%;
+  }
+}
